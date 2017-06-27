@@ -1,0 +1,90 @@
+.app-screen-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparentize($gray, .2);
+  z-index: 3000;
+  display: none;
+
+  &-body {
+    &--shown {
+      overflow: hidden;
+    }
+
+    &--hidden {
+      overflow: '';
+    }
+  }
+
+  &--shown {
+    display: block;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &__logo {
+    width: 23rem;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+
+    svg {
+      fill: white;
+
+      path,
+      polygon {
+        fill: white;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 100;
+        stroke-width: 0.05rem;
+        stroke: white;
+        animation: dash-loader 0.9s linear infinite;
+      }
+    }
+  }
+
+  &__stripe {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    opacity: .5;
+
+    svg {
+      fill: white;
+    }
+  }
+}
+
+@keyframes dash-loader {
+  0% {
+    fill: transparent;
+    stroke: white;
+  }
+
+  50% {
+    fill: transparent;
+    stroke-dasharray: 523 200;
+    stroke: white;
+  }
+
+  60% {
+    fill: transparent;
+    stroke-dasharray: 523 200;
+    stroke: white;
+  }
+
+  100% {
+    stroke: transparent;
+    stroke-dasharray: 523 200;
+    fill: white;
+  }
+}

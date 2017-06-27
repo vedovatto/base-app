@@ -1,0 +1,22 @@
+.app-main-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0 4rem;
+  box-shadow: 0 0.2rem 0.5rem darken(red, 20%);
+  background: red;
+  z-index: 50;
+
+  &__logo {
+    width: 12rem;
+    .tx-brasil{
+      fill: #505e67;
+    }
+  }
+
+  &__menu {
+    flex-grow: 2;
+    align-self: stretch;
+    padding-left: 4rem;
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "VARS": {
+    "APP_BASE_PATH": "./app/",
+    "DIST_BASE_PATH": "./dist/",
+    "VENDOR_PATH": "vendor/",
+    "ESLINT_RULES_FILE": "./build-config/.eslintrc.yml"
+  },
+  "constants": {
+    "dist": {
+      "path": "scripts/",
+      "fileName": "constants.js"
+    },
+    "watch": {
+      "source": [
+        "miscellaneous/configs/*.json"
+      ]
+    },
+    "application": {
+      "source": [
+        "miscellaneous/configs/*.json"
+      ]
+    },
+    "environment": {
+      "source": [
+        "miscellaneous/configs/environments/*.json"
+      ]
+    }
+  },
+  "fonts": {
+    "dist": {
+      "path": "stylesheets/fonts/"
+    },
+    "watch": {
+      "source": [
+        "stylesheets/fonts/**/*.{eot,svg,ttf,woff,woff2}"
+      ]
+    },
+    "own": {
+      "source": [
+        "stylesheets/fonts/**/*.{eot,svg,ttf,woff,woff2}",
+        "!stylesheets/fonts/vendor/**/*.{eot,svg,ttf,woff,woff2}"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "stylesheets/fonts/vendor/**/*.{eot,svg,ttf,woff,woff2}"
+      ]
+    }
+  },
+  "images": {
+    "dist": {
+      "path": "images/"
+    },
+    "watch": {
+      "source": [
+        "images/**/*.{png,jpeg,jpg,gif,svg,ico}"
+      ]
+    },
+    "own": {
+      "source": [
+        "images/**/*.{png,jpeg,jpg,gif,svg,ico}",
+        "!images/vendor/**/*.{png,jpeg,jpg,gif,svg,ico}",
+        "images/**/manifest.json"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "images/vendor/**/*.{png,jpeg,jpg,gif,svg,ico}"
+      ]
+    }
+  },
+  "media": {
+    "dist": {
+      "path": "media/"
+    },
+    "watch": {
+      "source": [
+        "media/**/*.{mp4,webm,ogv,ogg}"
+      ]
+    },
+    "own": {
+      "source": [
+        "media/**/*.{mp4,webm,ogv,ogg}",
+        "!media/vendor/**/*.{mp4,webm,ogv,ogg}"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "media/vendor/**/*.{mp4,webm,ogv,ogg}"
+      ]
+    }
+  },
+  "miscellaneous": {
+    "dist": {
+      "path": "/"
+    },
+    "watch": {
+      "source": [
+        "miscellaneous/favicon.ico",
+        "miscellaneous/robots.txt",
+        "miscellaneous/sitemap.xml"
+      ]
+    },
+    "own": {
+      "source": [
+        "miscellaneous/favicon.ico",
+        "miscellaneous/robots.txt",
+        "miscellaneous/sitemap.xml",
+        "!miscellaneous/vendor/**/*.*"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "miscellaneous/vendor/**/*.*"
+      ]
+    }
+  },
+  "scripts": {
+    "dist": {
+      "path": "scripts/",
+      "fileName": "all.js"
+    },
+    "watch": {
+      "source": [
+        "scripts/**/*.js"
+      ]
+    },
+    "own": {
+      "source": [
+        "scripts/app.js",
+        "scripts/**/*.js"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "./node_modules/jquery/dist/jquery.js",
+        "./node_modules/angular/angular.js",
+        "./node_modules/angular-ui-router/release/angular-ui-router.js",
+        "./node_modules/angular-resource/angular-resource.js",
+        "./node_modules/angular-cookies/angular-cookies.js",
+        "./node_modules/angular-moment-service/release/angular-momentjs-service.js"
+      ]
+    }
+  },
+  "stylesheets": {
+    "dist": {
+      "path": "stylesheets/",
+      "fileName": "all.css"
+    },
+    "watch": {
+      "source": [
+        "stylesheets/**/*.scss"
+      ]
+    },
+    "own": {
+      "source": [
+        "stylesheets/main.scss"
+      ]
+    },
+    "vendor": {
+      "source": [
+        "stylesheets/vendor.scss"
+      ]
+    }
+  },
+  "svgs": {
+    "dist": {
+      "path": "scripts/",
+      "fileName": "all.svgs.js"
+    },
+    "watch": {
+      "source": [
+        "svgs/**/*.svg"
+      ]
+    },
+    "own": {
+      "source": [
+        "svgs/**/*.svg"
+      ]
+    },
+    "vendor": {
+      "source": [
+
+      ]
+    }
+  },
+  "views": {
+    "main": "views/index.pug",
+    "dist": {
+      "path": "scripts/",
+      "fileName": "all.views.js"
+    },
+    "watch": {
+      "source": [
+        "views/**/*.pug"
+      ]
+    },
+    "own": {
+      "source": [
+        "views/**/*.pug",
+        "!views/index.pug",
+        "!views/**/_*.pug"
+      ]
+    },
+    "vendor": {
+      "source": [
+
+      ]
+    }
+  }
+}

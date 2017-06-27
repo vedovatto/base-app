@@ -1,0 +1,19 @@
+{
+
+  "dev": {
+    "STATIC_URL_PREFIX": ""
+  },
+
+  "qa": {
+    "STATIC_URL_PREFIX": ""
+  },
+
+  "hml": {
+    "STATIC_URL_PREFIX": "https://statictest.app.cocacola.com.br/static/"
+  },
+
+  "prd": {
+    "STATIC_URL_PREFIX": "https://static.app.cocacola.com.br/static/"
+  }
+
+}

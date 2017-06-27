@@ -1,0 +1,13 @@
+{
+
+  "HOME": {
+    "name": "home",
+    "url": "/",
+    "controller": "homeCtl",
+    "templateUrl": "controllers/home.html",
+    "data": {
+      "authStatus": [ "UNAUTHENTICATED", "AUTHENTICATED" ]
+    }
+  }
+
+}

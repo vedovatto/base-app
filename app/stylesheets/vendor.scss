@@ -1,0 +1,37 @@
+// variables
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
+// mixins utilities
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_hide-text.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_image.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_labels.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_opacity.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_reset-filter.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_resize.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_reset-text.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_size.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_tab-focus.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_text-overflow.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss";
+
+// mixins layout
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_background-variant.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_center-block.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_clearfix.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_grid-framework.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss";
+
+// resets and dependencies
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss";
+
+// core css
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss";
+
+// utility classes
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss";
