@@ -1,0 +1,8 @@
+# files
+npm*debug.log
+
+# directories
+bower_components/
+node_modules/
+dist/
+.idea/

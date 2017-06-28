@@ -1,22 +1,29 @@
 'use strict';
 
-var build = require('./build-config/tasks/setup.js');
+// require common
+var common = require('./gulp/common.js');
 
-build.plugins.lodash([
-  './build-config/tasks/clean.js',
-  './build-config/tasks/build.js',
-  './build-config/tasks/constants.js',
-  './build-config/tasks/documentation.js',
-  './build-config/tasks/fonts.js',
-  './build-config/tasks/images.js',
-  './build-config/tasks/media.js',
-  './build-config/tasks/miscellaneous.js',
-  './build-config/tasks/scripts.js',
-  './build-config/tasks/serve.js',
-  './build-config/tasks/stylesheets.js',
-  './build-config/tasks/svgs.js',
-  './build-config/tasks/views.js',
-  './build-config/tasks/hints.js'
+/*
+ * This will load all js or coffee files in the gulp directory
+ * in order to load all gulp tasks
+ */
+common.gulp_lodash([
+  './gulp/build.js',
+  './gulp/fonts.js',
+  './gulp/images.js',
+  './gulp/media.js',
+  './gulp/scripts.js',
+  './gulp/miscellaneous.js',
+  './gulp/server.js',
+  './gulp/stylesheets.js',
+  './gulp/views.js'
 ]).forEach(function(file) {
-  require(file)(build);
+  require(file)(common);
+});
+
+/*
+ * Default launch development environment
+ */
+common.gulp.task('default', function() {
+  common.gulp.start(['server']);
 });

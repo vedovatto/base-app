@@ -1,23 +1,31 @@
-##### Install project dependencies:
+## Instalando as dependências do NPM:
 
 `$ npm install`
 
-##### Add a new build dependency to the project:
+## Adicionando alguma dependência NPM ao projeto:
 
-`$ npm install --save-dev {my-dependency}`
+`$ npm install --save-dev minha-dependencia`
 
-##### Add a new application dependency to the project:
+## Rodando o Build de Desenvolvimento:
 
-`$ npm install --save {my-dependency}`
+`$ npm run build-dev`
 
-##### Building the _frontend_ (`env = 'dev' || 'hml' || 'prd'`):
+## Rodando o Build de Homologação:
 
-`$ npm run build-{env}`
+`$ gulp build --env hml`
 
-##### Running the _frontend_ (with a local server, for DEV-time):
+`$ npm run build-hml`
 
-`$ npm run serve-dev`
+## Rodando o Build de Produção:
 
-##### Generating _frontend_ documentation:
+`$ gulp build --env pro`
 
-`$ npm run documentation`
+`$ npm run build-pro`
+
+## Rodando o Servidor de Desenvolvimento:
+
+`$ gulp server`
+
+`$ gulp server --env dev`
+
+`$ npm run server-dev`

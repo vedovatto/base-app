@@ -1,9 +1,0 @@
-div
-  script.loader-script
-    | function onScriptLoad() {
-    |   $('.loader-script').trigger('onScriptLoad');
-    | }
-
-  script(async, defer, src="https://www.google.com/recaptcha/api.js?onload=onScriptLoad&render=explicit")
-
-  .captcha-rendered-element
